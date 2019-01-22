@@ -23,30 +23,38 @@ Use the supplied data as the source of data to answer the questions. Copy the SQ
 ## Questions
 
 1.  Return ALL the data in the 'movies' table.
+
   SELECT * FROM  movies;
 
 2.  Return ONLY the name column from the 'people' table
+
   SELECT (name) FROM people;
 
 3.  Oops! Someone at CodeClan spelled Kimberly's name wrong! Change it to reflect the proper spelling ('Kimberly Clarke' should be 'Kimberly Clark').
+
   UPDATE people SET name = 'Kimberly Clark' WHERE name = 'Kimberly Clarke';
 
 4.  Return ONLY your name from the 'people' table.
+
   SELECT * FROM people WHERE name = 'Delia Paternina';
 
 5.  The cinema is showing 'Batman Begins', but Batman is DC, not Marvel! Delete the entry from the 'movies' table.
+
   DELETE from movies WHERE title = 'Batman Begins';
 
 6.  Create a new entry in the 'people' table with the name of one of the instructors.
   INSERT INTO people (name) VALUES ('John');
 
 7.  John Smith has decided to hijack our movie evening, Remove him from the table of people.
+
   DELETE from people WHERE name = 'John Smith';
 
 8.  The cinema has just heard that they will be holding an exclusive midnight showing of 'Avengers: Infinity War'!! Create a new entry in the 'movies' table to reflect this.
+
   INSERT INTO movies (title, year, show_time) VALUES ('Avengers: Infinity War', 2019, '0:00');
 
 9.  The cinema would also like to make the Guardians movies a back to back feature. Find out the show time of "Guardians of the Galaxy" and set the show time of "Guardians of the Galaxy 2" to start two hours later.
+
   UPDATE movies SET show_time = '00:50' WHERE title = 'Guardians of the Galaxy 2';
 
 
